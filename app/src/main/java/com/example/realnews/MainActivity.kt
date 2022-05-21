@@ -122,8 +122,8 @@ class MainActivity : AppCompatActivity(),categoriesadapter.clickinterface,
                     val news= model(
                         models[i].title,
                         models[i].url,
-                        models[i].name,
-                        models[i].image
+                        models[i].image,
+                        models[i].newsauthor
                     )
                     modelList.add(news)
                 }

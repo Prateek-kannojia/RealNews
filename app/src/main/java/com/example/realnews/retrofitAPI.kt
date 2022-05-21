@@ -8,6 +8,6 @@ interface retrofitAPI {
     @GET
     fun getNewsbycategory(@Url str: String?): Call<Newsmodel>
 
-    @GET()
+    @GET
     fun getallNews(@Url str: String?): Call<Newsmodel>
 }

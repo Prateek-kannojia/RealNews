@@ -26,7 +26,7 @@ class itemadapter(private val context: Context,private val listener: clickinterf
     override fun onBindViewHolder(holder: viewholder, position: Int) {
         val items= modellist[position]
         holder.title.text = items.title
-        holder.source.text = items.name
+        holder.source.text = items.newsauthor
         Picasso.get().load(items.image).into(holder.newsimage)
         holder.itemView.setOnClickListener {
             listener.onnewsclick(position)

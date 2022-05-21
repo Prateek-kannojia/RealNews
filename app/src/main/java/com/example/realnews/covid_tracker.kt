@@ -45,7 +45,7 @@ class covid_tracker : AppCompatActivity() {
         return null
     }
 
-    fun fetchdata() {
+    private fun fetchdata() {
         // com.android.volley.Response.ErrorListener
         Volley.newRequestQueue(this).add(StringRequest(0, url, { response: String? ->
             try {
